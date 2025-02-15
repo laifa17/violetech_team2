@@ -1,0 +1,189 @@
+import streamlit as st
+
+st.title('Big Data, Machine Learning, and AI')
+st.snow()
+st.image('https://www.simplilearn.com/ice9/free_resources_article_thumb/What_is_Data_Types_of_Data_and_How_To_Analyze_Data.jpg')
+st.divider()
+
+# big data
+st.header(':blue[*Big] :blue[Data*] :anchor:')
+st.image('https://www.coregistros.com/wp-content/uploads/2016/07/big-data-bbdd-data-base-bases-de-datos.jpg')
+if st.toggle(':ferry: Definisi Big Data'):
+    st.subheader('*1. Definisi Big Data*')
+    st.markdown('''Big Data merujuk pada kumpulan data yang memiliki skala sangat besar (volume), beragam (variety), dan dihasilkan atau diproses dengan kecepatan tinggi (velocity). Data ini sulit untuk ditangani menggunakan sistem komputer konvensional, sehingga memerlukan teknologi dan metode analitis inovatif untuk menghasilkan informasi yang bermakna.  
+    ''')
+    multi = '''*Beberapa definisi Big Data:*  
+    •	McKinsey Global (2011): Big Data adalah data dalam jumlah besar dan kompleks yang memerlukan arsitektur teknis serta metode analisis inovatif untuk menghasilkan wawasan baru yang bernilai bagi bisnis.  
+    •	Hurwitz et al. (2013): Big Data adalah kumpulan data yang sangat besar atau kompleks sehingga tidak bisa ditangani dengan sistem komputer konvensional.  
+    '''
+    st.markdown(multi)
+
+if st.toggle(':fishing_pole_and_fish: Perbedaan 3 Big'):
+    st.subheader('*2. Perbedaan Big Data, Big Information, dan Big Knowledge*')  
+    st.markdown('''•	Big Data: Sekumpulan fakta atau deskripsi tentang dunia nyata.  
+    •	Big Information: Data yang telah direkam atau dikumpulkan pada satu titik waktu tertentu, yang dapat berubah dari waktu ke waktu.  
+    •	Big Knowledge: Model atau pemahaman pribadi terhadap dunia nyata, yang tidak dapat disimpan dalam bentuk lain selain di dalam otak manusia.
+     ''')
+    
+if st.toggle(':desert_island: Kriteria Data yang Dikatakan sebagai Big Data'):
+    st.subheader('*Kriteria Data yang Dikatakan sebagai Big Data*')
+    st.markdown('''Big Data dapat dikategorikan berdasarkan beberapa aspek berikut:''')
+    multi = '''*1.	Variasi (Variety):* Terdiri dari berbagai jenis data (terstruktur dan tidak terstruktur) dalam jumlah besar.  
+    *2.	Kebenaran (Veracity):* Kualitas, akurasi, dan ketidakpastian data serta sumbernya.  
+    *3.	Kecepatan (Velocity):* Kecepatan dalam menghasilkan dan menganalisis data.  
+    *4.	Hasil (Value):* Potensi data untuk memberikan manfaat bagi sosial dan ekonomi.  
+    *5.	Besaran (Volume):* Data yang dihasilkan melalui digitalisasi informasi dalam skala besar.
+    '''
+    st.markdown(multi)
+
+if st.toggle(':canoe: Ekosistem Big Data'):
+    st.subheader('*4. Ekosistem Big Data*')
+    st.markdown('''Big Data tidak berdiri sendiri, melainkan terdiri dari ekosistem yang melibatkan:''')  
+    multi= '''•	Teknologi penyimpanan data:** Sistem cloud computing, database NoSQL, dan penyimpanan terdistribusi.  
+    *•	Teknologi pemrosesan data:* Hadoop, Spark, dan sistem pemrosesan paralel lainnya.  
+    *•	Teknologi analisis data:* Machine learning, AI, serta berbagai algoritma statistik dan pemrosesan data.
+    '''
+    st.markdown(multi)
+st.divider()
+
+# machine learning
+st.header(':green[Machine Learning] :rocket:')
+st.image('https://repararelpc.es/wp-content/uploads/2020/10/machine-learning-3.jpg')
+if st.toggle(':moon: Pengertian Machine Learning'):  
+   st.subheader('*1.	Pengertian machine learning*')
+   st.markdown('Machine Learning adalah teknologi canggih yang membuat komputer bisa belajar dari data dan memberikan prediksi atau keputusan tanpa diprogram secara detail. Dari cara kerja yang melibatkan data, pelatihan model, hingga prediksi, ML telah mengubah cara kita hidup dan bekerja.')
+
+if st.toggle(':shell: Machine Learning in a Nutshell'):
+    st.subheader('*2.	Machine Learning in a nutshell*')  
+    multi = '''*a.*	Paradigma komputasi di mana sistem atau program dapat belajar dari data untuk meningkatkan kinerjanya dalam suatu tugas tanpa adanya instruksi eksplisit.  
+     *b.*	Machine learning memungkinkan komputer untuk mengenali pola, membuat keputusan, atau melakukan tugas tertentu berdasarkan pembelajaran dari data, tanpa memerlukan pemrograman manual yang spesifik untuk setiap detail tugas tersebut.'''
+    st.markdown(multi)
+
+if st.toggle(':star: Tipe Machine Learning'):
+    st.subheader('*3.	Tipe-tipe Machine Learning*')  
+    st.image('https://compas.co.id/wp-content/uploads/2023/01/4-metode-machine-learning-2.webp')  
+    st.markdown('''*a.	Supervised*  
+    Menggunakan dataset yang meiliki label untuk memprediksi target.  
+    -	Klasifikasi  
+    Label yang diprediksi berupa data kategorikal  
+    -	Regresi   
+    Label yang diprediksi berupa data continuous''')  
+    st.markdown('''*b.	Unsupervised*''')  
+    multi = '''Menggunakan dataset tanpa label untuk melihat/mempelajari pola  
+    -	Clustering  
+    Mengelompokkan data berdasarkan perbedaan dan persamaan di antaranya'''
+    st.markdown(multi)  
+
+    st.markdown('''*c.	Semi-supervised*''')  
+    multi = '''Menggunakan data dengan label dan tanpa label untuk memprediksi/mempelajari pola.'''  
+    st.markdown(multi)  
+    
+    st.markdown('''*d.	Reinforcement*''')  
+    multi = '''Menggunakan data hasil simulasi/observasi secara interatif untuk mencapai tujuan tertentu berdasarkan reward/error'''  
+    st.markdown(multi)  
+    
+    st.subheader('*4.	Proses Umum Pembuatan Model Machine Learning*')  
+    st.image('https://www.scribbr.nl/wp-content/uploads/2023/07/machine-learning-process-flow.webp')
+    
+    st.subheader('*5.	Cara kerja machine learning*')  
+    st.image('https://www.advernesia.com/wp-content/uploads/2018/05/cara-kerja-machine-learning.png')
+    
+    st.subheader('*6.	Contoh Penggunaan Machine Learning di Kehidupan Nyata*')  
+    st.markdown('''*a.*	:red[Netflix]: Memberikan rekomendasi film berdasarkan riwayat tontonan kamu. ML mempelajari preferensi kamu dari data tontonan sebelumnya.  
+            *b.*	:blue[Google Maps]: Memprediksi rute tercepat dengan menganalisis data lalu lintas secara real-time.  
+            *c.*	:orange[E-commerce]: Memberikan rekomendasi produk yang sesuai dengan minat kamu, sehingga belanja jadi lebih personal.  
+            *d.*	:green[Kesehatan]: Membantu dokter mendiagnosis penyakit lebih cepat dengan menganalisis data medis.
+''')
+st.divider()
+
+#Ai
+st.header(':red[AI (Artificial Intelligence)] :milky_way:')
+st.image('https://cms-cmp.cbncloud.co.id/api/media/public/info/promo/images/VC-Blog-2024-Machine-Learning-di-Kehidupan-Nyata-Model%2C-Kasus-Penggunaan-dan-Pengoperasiannya-01%281%29.jpg', caption="The Role of AI")
+st.markdown('''adalah bidang ilmu yang berusaha membuat mesin mampu berpikir dan bertindak layaknya manusia. Saat ini, AI masih berada pada tahap Narrow AI, yang berarti hanya mampu melakukan tugas tertentu. Namun, tujuan utama AI adalah mencapai Artificial General Intelligence (AGI), di mana mesin bisa berpikir dan bertindak seperti manusia tanpa perlu diarahkan. Jika AGI tercapai dan diwujudkan dalam bentuk fisik, maka akan lahir Physical AI, yakni robot atau entitas cerdas yang memiliki tubuh dan kemampuan berpikir layaknya manusia. Menarik bukan? Pelajari AI lebih lanjut yuk!''')
+
+if st.toggle(':crescent_moon: Ciri-Ciri AI'):  
+    st.subheader("Ciri-Ciri Kecerdasan Buatan:")  
+    ciri_ciri = '''  
+    1.	Belajar atau memahami dari pengalaman.  
+    2.	Menemukan inti pesan yang ambigu atau bertentangan.  
+    3.	Merespons dengan cepat pada situasi baru.  
+    4.	Memecahkan masalah dengan pertimbangan yang efektif.  
+    5.	Menghadapi situasi yang membingungkan.  
+    6.	Memahami dan menyimpulkan secara rasional.  
+    7.	Menerapkan pengetahuan untuk memanipulasi lingkungan.  
+    8.	Berpikir dan mempertimbangkan keputusan.
+    '''  
+    st.markdown(ciri_ciri)
+
+if st.toggle(':bulb: Sudut Pandang Kecerdasan Buatan'):   
+    st.subheader("Sudut Pandang Kecerdasan Buatan:")  
+    st.markdown('''  
+    - Kecerdasan Buatan: Membuat mesin dapat berperilaku seperti manusia.  
+   - Penelitian: Mempelajari bagaimana agar komputer dapat melakukan tugas dengan cara yang sama seperti manusia.  
+    - Bisnis: Sebuah alat yang sangat kuat untuk menyelesaikan masalah bisnis.  
+    - Pemrograman: Fokus pada pengembangan program untuk menyelesaikan masalah dan pencarian solusi.''')
+
+if st.toggle(':sparkles: Keuntungan Kecerdasan Buatan'):
+    st.subheader("Keuntungan Kecerdasan Buatan:")  
+    keuntungan_ai = '''  
+    1. Lebih Permanen: AI tidak akan mudah terlupakan atau terpengaruh kondisi fisik.  
+    2. Mudah Diduplikasi: Dapat disalin dan digunakan di tempat lain dengan cepat.  
+    3. Lebih Murah: Dalam jangka panjang, AI lebih hemat biaya dibandingkan kecerdasan manusia.  
+    4. Konsisten: AI tidak terpengaruh oleh mood atau kondisi lainnya.  
+    5. Dapat Didokumentasi: Proses dan keputusan AI bisa dicatat dan dipelajari.  
+    6. Lebih Cepat: AI bisa menyelesaikan tugas lebih cepat daripada manusia.  
+    7. Lebih Baik: Dapat mengerjakan tugas dengan akurasi yang lebih tinggi.
+    '''  
+    st.markdown(keuntungan_ai)
+
+if st.toggle(':sailboat: Sejarah Perkembangan AI'):
+    st.subheader("Sejarah Perkembangan AI")  
+    sejarah_ai = '''  
+    1. 1943-1956: Catur pertama kali dibuat oleh Shannon & Turing. Deklarasi AI pada Workshop Dartmouth oleh John McCarthy (1956).  
+    2. 1956-1966: Logic Theorist: Membuktikan teorema-teorema matematika.  
+    3. 1966-1979: AI masih terbatas pada manipulasi simbolik dengan pengetahuan yang sangat sedikit. Sistem pakar pertama seperti MyCin, Dendral.  
+    4. 1980-sekarang: AI mulai berkembang menjadi industri besar dengan proyek Generasi Kelima di Jepang.
+    '''
+    st.markdown(sejarah_ai)
+
+if st.toggle(':sun_behind_cloud: Konsep AI'):
+    st.subheader("Konsep AI")  
+    konsep_ai = '''  
+    1. Turing Test: Merupakan metode pengujian kecerdasan yang dikemukakan oleh Alan Turing. Dalam uji ini, seorang penanya (manusia) akan berinteraksi dengan dua obyek yang ditanyai. Jika penanya tidak bisa membedakan mana obyek manusia dan mana mesin, berarti mesin tersebut dianggap memiliki kecerdasan.  
+    2. Pemrosesan Simbolik: AI memproses informasi secara simbolik dan non-algoritmik untuk menyelesaikan masalah, yang berarti AI tidak hanya mengikuti perintah tertentu, tetapi juga bisa memanipulasi simbol dan informasi dengan cara yang lebih fleksibel.  
+    3. Heuristic: Strategi pencarian yang digunakan dalam AI untuk mencari solusi masalah dengan cara yang lebih efisien, menghindari pencarian secara menyeluruh. Ini membantu mempercepat proses keputusan meski tidak selalu memberikan solusi optimal.  
+    4. Inferensi (Penarikan Kesimpulan):AI mencoba membuat mesin dapat berpikir dan mengambil keputusan berdasarkan fakta dan aturan yang ada, dengan menggunakan metode seperti heuristik untuk menarik kesimpulan atau inferensi.  
+    5. Pencocokan Pola (Pattern Matching): AI menggunakan pencocokan pola untuk mengenali dan mengidentifikasi objek atau kejadian tertentu dengan membandingkan data yang ada dengan pola yang telah dipelajari.
+    '''
+    st.markdown(konsep_ai)
+
+if st.toggle(':partly_sunny: Bagaimana AI Bekerja'):  
+    st.subheader("Bagaimana AI Bekerja?")  
+    st.markdown('''1.	Knowledge Base (Basis Pengetahuan)  
+    Ini adalah tempat AI menyimpan fakta-fakta, teori, dan hubungan antar konsep. Pengetahuan ini akan digunakan untuk membantu mesin dalam mengambil keputusan dan menyelesaikan masalah.  
+    2.	Inference engine (Mesin Penarikan Kesimpulan)  
+    Ini adalah kemampuan AI untuk menarik kesimpulan berdasarkan pengetahuan dan pengalaman yang dimiliki. Mesin ini berfungsi untuk menganalisis fakta yang diberikan dan menarik kesimpulan atau keputusan yang tepat.
+                ''')
+
+if st.toggle(':sunny: Analogi Kecerdasan Manusia dengan AI'):
+    st.subheader("Analogi Kecerdasan Manusia dengan AI")  
+    st.markdown('''  
+   Basis Pengetahuan Manusia: Manusia memiliki pengetahuan dan pengalaman untuk mengambil keputusan.  
+    Contoh:  
+    - Jika makan sambal lebih dari 5 sendok, perut saya akan sakit.  
+    - Jika terlambat berangkat kuliah, saya akan sampai terlambat.
+    
+    Inferensi Manusia: Manusia menarik kesimpulan berdasarkan pengetahuan dan pengalaman.  
+    Contoh:  
+    - Pengetahuan: Jika makan sambal lebih dari 5 sendok, perut akan sakit.  
+    - Fakta: Saya makan sambal 10 sendok.  
+    - Kesimpulan: Perut saya akan sakit.
+    ''')
+
+if st.toggle(':dizzy: Kesimpulan'):  
+    st.header("Kesimpulan")  
+    st.markdown('''  
+    AI merupakan bidang ilmu yang berfokus pada pengembangan mesin yang dapat berpikir dan bertindak seperti manusia. Meskipun saat ini AI berada pada tahap Narrow AI yang hanya bisa melakukan tugas tertentu, tujuannya adalah mencapai Artificial General Intelligence (AGI), di mana mesin dapat berpikir dan bertindak layaknya manusia tanpa arahan. Pengembangan AI melibatkan berbagai konsep seperti Turing Test, pemrosesan simbolik, heuristic, inferensi, dan pencocokan pola untuk membantu mesin memecahkan masalah secara efisien.
+                
+    AI menawarkan berbagai keuntungan, seperti efisiensi waktu, penghematan biaya, dan konsistensi dalam bekerja. Namun, AI juga memiliki keterbatasan dibandingkan kecerdasan manusia, seperti dalam hal kreativitas dan fleksibilitas. Meskipun demikian, AI terus berkembang dan membawa manfaat besar di banyak sektor, dengan ambisi untuk mencapai AGI dan mungkin membentuk Physical AI, yakni robot yang dapat berpikir dan berperilaku seperti manusia. Masa depan AI sangat menjanjikan dan menarik untuk diikuti.
+    ''')
